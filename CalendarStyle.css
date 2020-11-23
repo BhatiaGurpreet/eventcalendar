@@ -18,7 +18,6 @@ thead > tr > th {
 }
 
 .calendar-button {
-    border: 1px solid white;
     background-color: transparent;
 	color:white;
 	border-radius:5px;

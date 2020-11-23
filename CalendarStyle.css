@@ -1,4 +1,10 @@
-﻿table {
+ body
+    {
+        background-color: #249991;
+    }
+	
+
+table {
     width: 100%;
     height: 100%;   
     table-layout: fixed;
@@ -6,6 +12,7 @@
 	border-collapse: collapse;
 	background-color:white;
 }
+
 thead
 {
 	border:20px solid #1e6b65;
@@ -17,14 +24,16 @@ thead > tr > th {
 	border:none;
 }
 
-.calendar-button {
-    background-color: transparent;
-	color:white;
-	border-radius:5px;
+tbody
+{
+	border:20px solid white;
 }
-.calendar-button:hover{
-    transform:scale(1.5);
-    cursor: pointer;
+
+tbody > tr > td {
+    position: relative;
+    border: 1px solid #d5d5d5;
+    width: auto;
+    height: auto;
 }
 
 tbody > tr > td:hover {
@@ -34,15 +43,16 @@ tbody > tr > td:hover {
 	color:black;
 }
 
-tbody
-{
-	border:20px solid white;
+.calendar-button {
+	border:none;
+    background-color: transparent;
+	color:white;
+	outline:none;
 }
-tbody > tr > td {
-    position: relative;
-    border: 1px solid #d5d5d5;
-    width: auto;
-    height: auto;
+.calendar-button:hover{
+    transform:scale(1.5);
+    cursor: pointer;
+	border:none;
 }
 
 .today {
@@ -69,4 +79,21 @@ tbody > tr > td {
     background-color: dodgerblue;
     color: white;
     border-radius: 5px;
+}
+#Calendar
+	{
+		width: 650px;
+		height: 500px;
+		margin: auto;
+		padding: 20px;
+	}
+	
+@media screen and (max-width: 360px) {
+ #Calendar
+	{
+		width: 100%;
+		height: 75%;
+		margin: auto;
+		padding: 20px;
+	}
 }
